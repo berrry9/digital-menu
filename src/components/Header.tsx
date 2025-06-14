@@ -15,7 +15,7 @@ export const Header: React.FC<HeaderProps> = ({ user, cartItemsCount, onCartClic
         <div className="text-sm text-gray-500">Room {user.roomNumber}</div>
       </div>
       
-      <div className="text-xl font-bold text-gray-800">Asia</div>
+      <div className="text-xl font-bold text-gray-800">Menu</div>
       
       <div className="flex items-center space-x-3">
         <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
