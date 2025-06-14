@@ -29,7 +29,7 @@ export const ItemDetail: React.FC<ItemDetailProps> = ({ item, onClose, onAddToCa
           <button onClick={onClose} className="p-2">
             <ArrowLeft className="w-6 h-6 text-gray-600" />
           </button>
-          <div className="text-sm text-gray-500">Room 101</div>
+          <div className="text-sm text-gray-500">Room </div>
         </div>
 
         {/* Hero Image */}
