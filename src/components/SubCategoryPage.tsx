@@ -47,7 +47,7 @@ export const SubCategoryPage: React.FC<SubCategoryPageProps> = ({
             {getSubCategoryTitle(subCategory)}
           </h1>
         </div>
-        <div className="text-sm text-gray-500">Room 101</div>
+        <div className="text-sm text-gray-500">Room</div>
       </div>
 
       {/* Items Count */}
