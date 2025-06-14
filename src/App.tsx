@@ -26,7 +26,7 @@ function App() {
   const user = {
     name: 'Guest',
     avatar: '',
-    roomNumber: '101'
+    roomNumber: ''
   };
 
   const filteredItems = activeSubCategory 
