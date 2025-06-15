@@ -7,6 +7,8 @@ import { SubCategoryPage } from './components/SubCategoryPage';
 import { ItemDetail } from './components/ItemDetail';
 import { Cart } from './components/Cart';
 import { SideCart } from './components/SideCart';
+import { PageTransition } from './components/PageTransition';
+import { usePageTransition } from './hooks/usePageTransition';
 import { categories, menuItems } from './data/menuData';
 import { MenuItem } from './types/menu';
 
@@ -22,6 +24,8 @@ function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSideCartOpen, setIsSideCartOpen] = useState(false);
   const [items, setItems] = useState(menuItems);
+  
+  const { isTransitioning, startTransition, completeTransition } = usePageTransition();
 
   const user = {
     name: 'Guest',
@@ -86,12 +90,42 @@ function App() {
     setIsSideCartOpen(false);
   };
 
+  const handleCategoryChange = (categoryId: string) => {
+    if (categoryId !== activeCategory) {
+      startTransition();
+      setTimeout(() => {
+        setActiveCategory(categoryId);
+        setActiveSubCategory(null);
+      }, 350);
+    }
+  };
+
   const handleSubCategoryChange = (subCategory: string) => {
-    setActiveSubCategory(subCategory);
+    startTransition();
+    setTimeout(() => {
+      setActiveSubCategory(subCategory);
+    }, 350);
   };
 
   const handleBackToCategory = () => {
-    setActiveSubCategory(null);
+    startTransition();
+    setTimeout(() => {
+      setActiveSubCategory(null);
+    }, 350);
+  };
+
+  const handleItemClick = (item: MenuItem) => {
+    startTransition();
+    setTimeout(() => {
+      setSelectedItem(item);
+    }, 350);
+  };
+
+  const handleCloseItemDetail = () => {
+    startTransition();
+    setTimeout(() => {
+      setSelectedItem(null);
+    }, 350);
   };
 
   const cartItemsCount = cartItems.reduce((sum, item) => sum + item.cartQuantity, 0);
@@ -104,7 +138,7 @@ function App() {
           subCategory={activeSubCategory}
           items={filteredItems}
           onBack={handleBackToCategory}
-          onItemClick={setSelectedItem}
+          onItemClick={handleItemClick}
           onAddToCart={handleAddToCart}
           onToggleFavorite={handleToggleFavorite}
         />
@@ -112,7 +146,7 @@ function App() {
         {selectedItem && (
           <ItemDetail
             item={selectedItem}
-            onClose={() => setSelectedItem(null)}
+            onClose={handleCloseItemDetail}
             onAddToCart={handleAddToCart}
             onToggleFavorite={handleToggleFavorite}
           />
@@ -125,6 +159,11 @@ function App() {
           onUpdateQuantity={handleUpdateCartQuantity}
           onRemoveItem={handleRemoveFromCart}
           onPlaceOrder={handlePlaceOrder}
+        />
+
+        <PageTransition 
+          isTransitioning={isTransitioning} 
+          onTransitionComplete={completeTransition}
         />
       </div>
     );
@@ -141,7 +180,7 @@ function App() {
       <CategoryNav
         categories={categories}
         activeCategory={activeCategory}
-        onCategoryChange={setActiveCategory}
+        onCategoryChange={handleCategoryChange}
       />
       
       <SubCategoryNav 
@@ -152,7 +191,7 @@ function App() {
       
       <MenuGrid
         items={filteredItems}
-        onItemClick={setSelectedItem}
+        onItemClick={handleItemClick}
         onAddToCart={handleAddToCart}
         onToggleFavorite={handleToggleFavorite}
       />
@@ -160,7 +199,7 @@ function App() {
       {selectedItem && (
         <ItemDetail
           item={selectedItem}
-          onClose={() => setSelectedItem(null)}
+          onClose={handleCloseItemDetail}
           onAddToCart={handleAddToCart}
           onToggleFavorite={handleToggleFavorite}
         />
@@ -182,6 +221,11 @@ function App() {
         onUpdateQuantity={handleUpdateCartQuantity}
         onRemoveItem={handleRemoveFromCart}
         onPlaceOrder={handlePlaceOrder}
+      />
+
+      <PageTransition 
+        isTransitioning={isTransitioning} 
+        onTransitionComplete={completeTransition}
       />
     </div>
   );
