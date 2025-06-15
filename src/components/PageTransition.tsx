@@ -69,7 +69,7 @@ export const PageTransition: React.FC<PageTransitionProps> = ({
             ? 'translate-y-0 opacity-100' 
             : 'translate-y-4 opacity-0'
         }`}>
-          <h2 className="text-2xl font-bold text-white mb-1">Asia Hotel</h2>
+          <h2 className="text-2xl font-bold text-white mb-1">Tewodros Hotel</h2>
           <p className="text-blue-200 text-sm font-medium tracking-wide">Digital Menu</p>
         </div>
 
