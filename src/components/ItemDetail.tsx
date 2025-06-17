@@ -46,7 +46,27 @@ export const ItemDetail: React.FC<ItemDetailProps> = ({ item, onClose, onAddToCa
             >
               <ArrowLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </motion.button>
-            <div className="text-sm text-gray-500 dark:text-gray-400">Room</div>
+            {/* Hotel Logo in Item Detail */}
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
+              className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-md flex items-center justify-center"
+            >
+              <img 
+                src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop"
+                alt="Hotel Logo"
+                className="w-6 h-6 rounded-sm object-cover"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = '<span class="text-white font-bold text-xs">TB</span>';
+                  }
+                }}
+              />
+            </motion.div>
           </motion.div>
 
           {/* Hero Image */}

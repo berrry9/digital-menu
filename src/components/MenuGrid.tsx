@@ -15,10 +15,10 @@ export const MenuGrid: React.FC<MenuGridProps> = ({ items, onItemClick, onAddToC
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay for demonstration
+    // Extended loading delay to show shimmer effect for 5 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [items]);

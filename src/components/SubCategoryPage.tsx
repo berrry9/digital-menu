@@ -35,24 +35,39 @@ export const SubCategoryPage: React.FC<SubCategoryPageProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       {/* Header */}
-      <div className="flex items-center justify-between p-4 bg-white shadow-sm">
+      <div className="flex items-center justify-between p-4 bg-white dark:bg-gray-800 shadow-sm transition-colors duration-300">
         <button onClick={onBack} className="p-2">
-          <ArrowLeft className="w-6 h-6 text-gray-600" />
+          <ArrowLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
         </button>
         <div className="flex items-center space-x-2">
           <span className="text-2xl">{getSubCategoryIcon(subCategory)}</span>
-          <h1 className="text-xl font-bold text-gray-800">
+          <h1 className="text-xl font-bold text-gray-800 dark:text-white">
             {getSubCategoryTitle(subCategory)}
           </h1>
         </div>
-        <div className="text-sm text-gray-500">Room</div>
+        {/* Hotel Logo in SubCategory */}
+        <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-800 rounded-md flex items-center justify-center">
+          <img 
+            src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop"
+            alt="Hotel Logo"
+            className="w-6 h-6 rounded-sm object-cover"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              const parent = target.parentElement;
+              if (parent) {
+                parent.innerHTML = '<span class="text-white font-bold text-xs">TB</span>';
+              }
+            }}
+          />
+        </div>
       </div>
 
       {/* Items Count */}
-      <div className="px-4 py-3 bg-white border-b">
-        <p className="text-sm text-gray-600">
+      <div className="px-4 py-3 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 transition-colors duration-300">
+        <p className="text-sm text-gray-600 dark:text-gray-400">
           {items.length} {items.length === 1 ? 'item' : 'items'} available
         </p>
       </div>

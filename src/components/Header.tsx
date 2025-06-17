@@ -20,7 +20,28 @@ export const Header: React.FC<HeaderProps> = ({ user, cartItemsCount, onCartClic
       id="header"
     >
       <div className="flex items-center space-x-3">
-        <div className="text-sm text-gray-500 dark:text-gray-400">Room {user.roomNumber}</div>
+        {/* Hotel Logo Placeholder */}
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
+          className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center shadow-lg"
+        >
+          <img 
+            src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+            alt="Tewodros Belay Int Hotel Logo"
+            className="w-10 h-10 rounded-md object-cover"
+            onError={(e) => {
+              // Fallback to text logo if image fails to load
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              const parent = target.parentElement;
+              if (parent) {
+                parent.innerHTML = '<span class="text-white font-bold text-lg">TB</span>';
+              }
+            }}
+          />
+        </motion.div>
       </div>
       
       <motion.div
