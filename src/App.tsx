@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Header } from './components/Header';
 import { CategoryNav } from './components/CategoryNav';
 import { SubCategoryNav } from './components/SubCategoryNav';
@@ -8,7 +9,10 @@ import { ItemDetail } from './components/ItemDetail';
 import { Cart } from './components/Cart';
 import { SideCart } from './components/SideCart';
 import { PageTransition } from './components/PageTransition';
+import { OnboardingOverlay } from './components/onboarding/OnboardingOverlay';
 import { usePageTransition } from './hooks/usePageTransition';
+import { ThemeProvider } from './contexts/ThemeContext';
+import { OnboardingProvider } from './contexts/OnboardingContext';
 import { categories, menuItems } from './data/menuData';
 import { MenuItem } from './types/menu';
 
@@ -16,7 +20,7 @@ interface CartItem extends MenuItem {
   cartQuantity: number;
 }
 
-function App() {
+function AppContent() {
   const [activeCategory, setActiveCategory] = useState('soup');
   const [activeSubCategory, setActiveSubCategory] = useState<string | null>(null);
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
@@ -30,7 +34,7 @@ function App() {
   const user = {
     name: 'Guest',
     avatar: '',
-    roomNumber: ''
+    roomNumber: '101'
   };
 
   const filteredItems = activeSubCategory 
@@ -50,10 +54,7 @@ function App() {
       return [...prev, { ...item, cartQuantity: quantity }];
     });
     
-    // Show side cart when item is added
     setIsSideCartOpen(true);
-    
-    // Auto-hide side cart after 3 seconds
     setTimeout(() => {
       setIsSideCartOpen(false);
     }, 3000);
@@ -130,10 +131,13 @@ function App() {
 
   const cartItemsCount = cartItems.reduce((sum, item) => sum + item.cartQuantity, 0);
 
-  // If a subcategory is selected, show the subcategory page
   if (activeSubCategory) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
+      >
         <SubCategoryPage
           subCategory={activeSubCategory}
           items={filteredItems}
@@ -143,14 +147,16 @@ function App() {
           onToggleFavorite={handleToggleFavorite}
         />
 
-        {selectedItem && (
-          <ItemDetail
-            item={selectedItem}
-            onClose={handleCloseItemDetail}
-            onAddToCart={handleAddToCart}
-            onToggleFavorite={handleToggleFavorite}
-          />
-        )}
+        <AnimatePresence>
+          {selectedItem && (
+            <ItemDetail
+              item={selectedItem}
+              onClose={handleCloseItemDetail}
+              onAddToCart={handleAddToCart}
+              onToggleFavorite={handleToggleFavorite}
+            />
+          )}
+        </AnimatePresence>
 
         <SideCart
           isOpen={isSideCartOpen}
@@ -165,12 +171,18 @@ function App() {
           isTransitioning={isTransitioning} 
           onTransitionComplete={completeTransition}
         />
-      </div>
+
+        <OnboardingOverlay />
+      </motion.div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
+    >
       <Header
         user={user}
         cartItemsCount={cartItemsCount}
@@ -196,14 +208,16 @@ function App() {
         onToggleFavorite={handleToggleFavorite}
       />
 
-      {selectedItem && (
-        <ItemDetail
-          item={selectedItem}
-          onClose={handleCloseItemDetail}
-          onAddToCart={handleAddToCart}
-          onToggleFavorite={handleToggleFavorite}
-        />
-      )}
+      <AnimatePresence>
+        {selectedItem && (
+          <ItemDetail
+            item={selectedItem}
+            onClose={handleCloseItemDetail}
+            onAddToCart={handleAddToCart}
+            onToggleFavorite={handleToggleFavorite}
+          />
+        )}
+      </AnimatePresence>
 
       <Cart
         isOpen={isCartOpen}
@@ -227,7 +241,19 @@ function App() {
         isTransitioning={isTransitioning} 
         onTransitionComplete={completeTransition}
       />
-    </div>
+
+      <OnboardingOverlay />
+    </motion.div>
+  );
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <OnboardingProvider>
+        <AppContent />
+      </OnboardingProvider>
+    </ThemeProvider>
   );
 }
 
