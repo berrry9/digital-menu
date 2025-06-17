@@ -29,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({ user, cartItemsCount, onCartClic
         transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
         className="text-xl font-bold text-gray-800 dark:text-white"
       >
-        Tewodros Menu
+        Tewodros Belay Int Hotel Menu
       </motion.div>
       
       <div className="flex items-center space-x-3">
