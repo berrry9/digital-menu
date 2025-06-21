@@ -9,10 +9,8 @@ import { ItemDetail } from './components/ItemDetail';
 import { Cart } from './components/Cart';
 import { SideCart } from './components/SideCart';
 import { PageTransition } from './components/PageTransition';
-import { OnboardingOverlay } from './components/onboarding/OnboardingOverlay';
 import { usePageTransition } from './hooks/usePageTransition';
 import { ThemeProvider } from './contexts/ThemeContext';
-import { OnboardingProvider } from './contexts/OnboardingContext';
 import { categories, menuItems } from './data/menuData';
 import { MenuItem } from './types/menu';
 
@@ -171,8 +169,6 @@ function AppContent() {
           isTransitioning={isTransitioning} 
           onTransitionComplete={completeTransition}
         />
-
-        <OnboardingOverlay />
       </motion.div>
     );
   }
@@ -241,8 +237,6 @@ function AppContent() {
         isTransitioning={isTransitioning} 
         onTransitionComplete={completeTransition}
       />
-
-      <OnboardingOverlay />
     </motion.div>
   );
 }
@@ -250,9 +244,7 @@ function AppContent() {
 function App() {
   return (
     <ThemeProvider>
-      <OnboardingProvider>
-        <AppContent />
-      </OnboardingProvider>
+      <AppContent />
     </ThemeProvider>
   );
 }
