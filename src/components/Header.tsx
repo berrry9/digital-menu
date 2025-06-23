@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ user, cartItemsCount, onCartClic
           className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center shadow-lg"
         >
           <img 
-            src="https://www.tewodros-belay-int-hotel.com/wp-content/uploads/2021/02/provincial-hotel.svg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+            src="https://www.tewodros-belay-int-hotel.com/wp-content/uploads/2021/02/Logo.jpg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
             alt="Tewodros Belay Int Hotel Logo"
             className="w-10 h-10 rounded-md object-cover"
             onError={(e) => {
