@@ -13,7 +13,7 @@ export const SubCategoryNav: React.FC<SubCategoryNavProps> = ({
 }) => {
   const getSubCategories = (category: string) => {
     switch (category) {
-      case 'Specials':
+      case 'Soup':
         return ['Chicken', 'Sandwich', 'Salad', 'Breakfast'];
       case 'Mains':
         return ['Soup', 'Spaghetti', 'Rice', 'Traditional'];
