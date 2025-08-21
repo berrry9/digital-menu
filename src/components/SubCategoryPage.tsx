@@ -26,10 +26,31 @@ export const SubCategoryPage: React.FC<SubCategoryPageProps> = ({
 
   const getSubCategoryIcon = (subCat: string) => {
     switch (subCat) {
-      case 'seafood': return '🐟';
-      case 'veggie': return '🥬';
-      case 'meat': return '🥩';
-      case 'poultry': return '🐔';
+      // Mains (noodles category)
+      case 'soup': return '🍲';
+      case 'spaghetti': return '🍝';
+      case 'rice': return '🍚';
+      case 'traditional': return '🍽️';
+      // Grill (rice category)
+      case 'pizza': return '🍕';
+      case 'burger': return '🍔';
+      case 'fish': return '🐟';
+      case 'beef': return '🥩';
+      // Specials (soup category)
+      case 'chicken': return '🐔';
+      case 'sandwich': return '🥪';
+      case 'salad': return '🥗';
+      case 'breakfast': return '🍳';
+      // Drinks (salad category)
+      case 'hot drinks': return '☕';
+      case 'juice': return '🧃';
+      case 'soft drinks': return '🥤';
+      case 'mineral water': return '💧';
+      // Alcohol (sushi category)
+      case 'beer': return '🍺';
+      case 'wine': return '🍷';
+      case 'spirits': return '🥃';
+      case 'rum': return '🍹';
       default: return '🍽️';
     }
   };

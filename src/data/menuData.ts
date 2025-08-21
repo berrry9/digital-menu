@@ -1,11 +1,11 @@
 import { MenuItem, MenuCategory, SubCategory } from '../types/menu';
 
 export const categories: MenuCategory[] = [
-  { id: 'noodles', name: 'Noodles', icon: '🍜' },
-  { id: 'rice', name: 'Rice', icon: '🍚' },
-  { id: 'soup', name: 'Soup', icon: '🍲' },
-  { id: 'salad', name: 'Salad', icon: '🥗' },
-  { id: 'sushi', name: 'Sushi', icon: '🍣' },
+  { id: 'noodles', name: 'Mains', icon: '🍜' },
+  { id: 'rice', name: 'Grill', icon: '🍚' },
+  { id: 'soup', name: 'Specials', icon: '🍲' },
+  { id: 'salad', name: 'Drinks', icon: '🥗' },
+  { id: 'sushi', name: 'Alcohol', icon: '🍣' },
 ];
 
 export const subCategories: SubCategory[] = [

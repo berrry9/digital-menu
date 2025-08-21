@@ -13,16 +13,16 @@ export const SubCategoryNav: React.FC<SubCategoryNavProps> = ({
 }) => {
   const getSubCategories = (category: string) => {
     switch (category) {
-      case 'soup':
-        return ['Seafood', 'Veggie', 'Meat', 'Poultry'];
       case 'noodles':
-        return ['Ramen', 'Udon', 'Soba', 'Yakisoba'];
+        return ['Soup', 'Spaghetti', 'Rice', 'Traditional'];
       case 'rice':
-        return ['Donburi', 'Chirashi', 'Onigiri', 'Curry'];
+        return ['Pizza', 'Burger', 'Fish', 'Beef'];
+      case 'soup':
+        return ['Chicken', 'Sandwich', 'Salad', 'Breakfast'];
       case 'salad':
-        return ['Seaweed', 'Tofu', 'Cucumber', 'Mixed'];
+        return ['Hot Drinks', 'Juice', 'Soft Drinks', 'Mineral Water'];
       case 'sushi':
-        return ['Nigiri', 'Sashimi', 'Rolls', 'Bowls'];
+        return ['Beer', 'Wine', 'Spirits', 'Rum'];
       default:
         return [];
     }
