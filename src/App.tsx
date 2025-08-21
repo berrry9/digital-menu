@@ -201,12 +201,14 @@ function AppContent() {
         onSubCategoryChange={handleSubCategoryChange}
       />
       
-      <MenuGrid
-        items={filteredItems}
-        onItemClick={handleItemClick}
-        onAddToCart={handleAddToCart}
-        onToggleFavorite={handleToggleFavorite}
-      />
+      {!activeSubCategory ? (
+        <MenuGrid
+          items={filteredItems}
+          onItemClick={handleItemClick}
+          onAddToCart={handleAddToCart}
+          onToggleFavorite={handleToggleFavorite}
+        />
+      ) : null}
 
       <AnimatePresence>
         {selectedItem && (

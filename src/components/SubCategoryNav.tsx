@@ -13,16 +13,16 @@ export const SubCategoryNav: React.FC<SubCategoryNavProps> = ({
 }) => {
   const getSubCategories = (category: string) => {
     switch (category) {
-      case 'Soup':
-        return ['Chicken', 'Sandwich', 'Salad', 'Breakfast'];
-      case 'Mains':
-        return ['Soup', 'Spaghetti', 'Rice', 'Traditional'];
-      case 'Grill':
-        return ['Pizza', 'Burger', 'Fish', 'Beef'];
-      case 'Alchol':
-        return ['Beer', 'Wine', 'Spirits', 'Rum'];
-      case 'Drinks':
-        return ['Hot Drinks', 'Juice', 'Soft Drinks', 'Mineral Water'];
+      case 'soup':
+        return ['Seafood', 'Veggie', 'Meat', 'Poultry'];
+      case 'noodles':
+        return ['Ramen', 'Udon', 'Soba', 'Yakisoba'];
+      case 'rice':
+        return ['Donburi', 'Chirashi', 'Onigiri', 'Curry'];
+      case 'salad':
+        return ['Seaweed', 'Tofu', 'Cucumber', 'Mixed'];
+      case 'sushi':
+        return ['Nigiri', 'Sashimi', 'Rolls', 'Bowls'];
       default:
         return [];
     }
@@ -33,15 +33,15 @@ export const SubCategoryNav: React.FC<SubCategoryNavProps> = ({
   if (subCategories.length === 0) return null;
 
   return (
-    <div className="flex space-x-4 p-4 bg-white border-b border-gray-100 overflow-x-auto">
+    <div className="flex space-x-4 p-4 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 overflow-x-auto transition-colors duration-300">
       {subCategories.map((subCategory) => (
         <button
           key={subCategory}
           onClick={() => onSubCategoryChange(subCategory.toLowerCase())}
-          className={`text-sm font-medium transition-colors whitespace-nowrap px-3 py-2 rounded-lg ${
+          className={`text-sm font-medium transition-colors whitespace-nowrap px-4 py-2 rounded-lg ${
             activeSubCategory === subCategory.toLowerCase()
-              ? 'text-blue-600 bg-blue-50 border-b-2 border-blue-600'
-              : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+              ? 'text-white bg-blue-600 dark:bg-blue-700'
+              : 'text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'
           }`}
         >
           {subCategory}
