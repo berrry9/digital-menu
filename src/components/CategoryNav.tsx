@@ -11,11 +11,11 @@ interface CategoryNavProps {
 export const CategoryNav: React.FC<CategoryNavProps> = ({ categories, activeCategory, onCategoryChange }) => {
   const getCategoryIcon = (categoryId: string) => {
     switch (categoryId) {
-      case 'noodles': return '🍜';
-      case 'rice': return '🍚';
+      case 'noodles': return '🍽️';
+      case 'rice': return '🍖';
       case 'soup': return '🍲';
-      case 'salad': return '🥗';
-      case 'sushi': return '🍣';
+      case 'salad': return '🍹';
+      case 'sushi': return '🍷';
       default: return '🍽️';
     }
   };
