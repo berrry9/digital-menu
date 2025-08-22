@@ -21,7 +21,7 @@ export const SubCategoryPage: React.FC<SubCategoryPageProps> = ({
   onToggleFavorite
 }) => {
   const getSubCategoryTitle = (subCat: string) => {
-    return subCat.charAt(0).toUpperCase() + subCat.slice(1);
+    return subCat.charAt(0).toUpperCase() + subCat.slice(1).replace('-', ' ');
   };
 
   const getSubCategoryIcon = (subCat: string) => {
@@ -42,10 +42,10 @@ export const SubCategoryPage: React.FC<SubCategoryPageProps> = ({
       case 'salad': return '🥗';
       case 'breakfast': return '🍳';
       // Drinks (salad category)
-      case 'hot drinks': return '☕';
+      case 'hot-drinks': return '☕';
       case 'juice': return '🧃';
-      case 'soft drinks': return '🥤';
-      case 'mineral water': return '💧';
+      case 'soft-drinks': return '🥤';
+      case 'mineral-water': return '💧';
       // Alcohol (sushi category)
       case 'beer': return '🍺';
       case 'wine': return '🍷';

@@ -14,15 +14,15 @@ export const SubCategoryNav: React.FC<SubCategoryNavProps> = ({
   const getSubCategories = (category: string) => {
     switch (category) {
       case 'noodles':
-        return ['Soup', 'Spaghetti', 'Rice', 'Traditional'];
+        return ['soup', 'spaghetti', 'rice', 'traditional'];
       case 'rice':
-        return ['Pizza', 'Burger', 'Fish', 'Beef'];
+        return ['pizza', 'burger', 'fish', 'beef'];
       case 'soup':
-        return ['Chicken', 'Sandwich', 'Salad', 'Breakfast'];
+        return ['chicken', 'sandwich', 'salad', 'breakfast'];
       case 'salad':
-        return ['Hot Drinks', 'Juice', 'Soft Drinks', 'Mineral Water'];
+        return ['hot-drinks', 'juice', 'soft-drinks', 'mineral-water'];
       case 'sushi':
-        return ['Beer', 'Wine', 'Spirits', 'Rum'];
+        return ['beer', 'wine', 'spirits', 'rum'];
       default:
         return [];
     }
@@ -37,14 +37,14 @@ export const SubCategoryNav: React.FC<SubCategoryNavProps> = ({
       {subCategories.map((subCategory) => (
         <button
           key={subCategory}
-          onClick={() => onSubCategoryChange(subCategory.toLowerCase())}
+          onClick={() => onSubCategoryChange(subCategory)}
           className={`text-sm font-medium transition-colors whitespace-nowrap px-4 py-2 rounded-lg ${
-            activeSubCategory === subCategory.toLowerCase()
+            activeSubCategory === subCategory
               ? 'text-white bg-blue-600 dark:bg-blue-700'
               : 'text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'
           }`}
         >
-          {subCategory}
+          {subCategory.charAt(0).toUpperCase() + subCategory.slice(1).replace('-', ' ')}
         </button>
       ))}
     </div>
