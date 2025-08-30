@@ -368,7 +368,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-rice-5',
-    name: 'Mushroom Risotto',
+    name: 'Rice With Vegitable',
     description: 'Creamy Italian rice with mixed mushrooms',
     price: 16,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
