@@ -344,7 +344,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'rice',
     calories: 380,
     volume: '350g',
-    ingredients: ['jasmine rice', 'coconut milk', 'ginger', 'lemongrass', 'curry leaves'],
+    ingredients: ['Rice', 'Mushroom', 'Flour', 'Butter', 'Salt', 'W.Papper', 'Cream', 'Oil'],
     available: true,
     quantity: 12,
     rating: 4.6,
