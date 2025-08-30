@@ -45,7 +45,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 'main-soup-1',
     name: 'Hungarian Soup',
-    description: '',
+    description: 'Traditional red lentil soup with berbere spices and aromatic herbs',
     price: 8,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
     category: 'Mains',
