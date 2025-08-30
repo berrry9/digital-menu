@@ -238,7 +238,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-spaghetti-6',
-    name: 'Spaghetti Alfredo',
+    name: 'Cooked Vegitable',
     description: 'Creamy white sauce with butter and parmesan cheese',
     price: 13,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
