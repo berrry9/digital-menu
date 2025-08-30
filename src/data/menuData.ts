@@ -320,7 +320,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-rice-2',
-    name: 'Vegetarian Rice Pilaf',
+    name: 'Tomato ',
     description: 'Aromatic rice with vegetables and spices',
     price: 12,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
