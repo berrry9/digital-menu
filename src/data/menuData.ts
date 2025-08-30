@@ -92,7 +92,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-soup-4',
-    name: 'Tomato Basil Soup',
+    name: 'Pamkin Soup',
     description: 'Classic tomato soup with fresh basil and cream',
     price: 7,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -100,7 +100,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'soup',
     calories: 200,
     volume: '350ml',
-    ingredients: ['fresh tomatoes', 'basil', 'cream', 'onions', 'garlic', 'vegetable stock'],
+    ingredients: ['Pumkin', 'Onion', 'Celery', 'Leek', 'Salt', 'Oil'],
     available: true,
     quantity: 15,
     rating: 4.4,
