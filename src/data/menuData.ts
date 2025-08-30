@@ -376,7 +376,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'rice',
     calories: 520,
     volume: '400g',
-    ingredients: ['arborio rice', 'mixed mushrooms', 'white wine', 'parmesan', 'butter', 'herbs'],
+    ingredients: ['Rice', 'mixed mushrooms', 'white wine', 'parmesan', 'butter', 'herbs'],
     available: true,
     quantity: 7,
     rating: 4.7,
