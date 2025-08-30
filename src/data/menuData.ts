@@ -132,7 +132,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'soup',
     calories: 350,
     volume: '300ml',
-    ingredients: ['Chicken', 'crab meat', 'cream', 'white wine', 'herbs', 'seafood stock'],
+    ingredients: ['Chicken', 'butter', 'Flour', 'cream', 'Oil', 'Salt', 'SW Papper'],
     available: true,
     quantity: 4,
     rating: 4.9,
