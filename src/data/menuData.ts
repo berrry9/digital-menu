@@ -222,7 +222,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-spaghetti-5',
-    name: 'Spaghetti Puttanesca',
+    name: 'Spaghetti With Vegitable',
     description: 'Bold sauce with olives, capers, anchovies, and tomatoes',
     price: 12,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
