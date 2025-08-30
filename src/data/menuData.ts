@@ -434,7 +434,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-traditional-4',
-    name: 'Gomen',
+    name: 'Beef Fillet',
     description: 'Collard greens with garlic and ginger',
     price: 10,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
