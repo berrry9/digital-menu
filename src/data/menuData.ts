@@ -402,7 +402,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-traditional-2',
-    name: 'Tibs',
+    name: 'Tibs firfir',
     description: 'Sautéed beef with vegetables and spices',
     price: 18,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
