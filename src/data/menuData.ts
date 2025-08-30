@@ -174,7 +174,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-spaghetti-2',
-    name: 'Spaghetti Bolognese',
+    name: 'Tomato Sauce',
     description: 'Traditional meat sauce with ground beef and tomatoes',
     price: 13,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -182,7 +182,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'spaghetti',
     calories: 520,
     volume: '380g',
-    ingredients: ['spaghetti', 'ground beef', 'tomatoes', 'onions', 'carrots', 'red wine'],
+    ingredients: ['spaghetti', 'tomatos', 'onions', 'Garlic', 'Basil', 'Salt', 'Oil', 'Celery', 'B.Papper'],
     available: true,
     quantity: 10,
     rating: 4.7,
