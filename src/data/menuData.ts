@@ -386,7 +386,7 @@ export const menuItems: MenuItem[] = [
   // MAINS - Traditional (6 items)
   {
     id: 'main-traditional-1',
-    name: 'Kitfo',
+    name: 'Quanta firfir',
     description: 'Ethiopian steak tartare with spices and cheese',
     price: 22,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
