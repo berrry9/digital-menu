@@ -312,7 +312,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'rice',
     calories: 650,
     volume: '450g',
-    ingredients: ['Rice', 'Tomato', 'berbere spice', 'onions', 'eggs', 'butter'],
+    ingredients: ['Rice', 'Tomato', 'Onion', 'Garlic', 'Beef', 'Tomato', 'Onion', 'Garlic', 'Beef', 'butter'],
     available: true,
     quantity: 6,
     rating: 4.9,
