@@ -286,7 +286,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-spaghetti-9',
-    name: 'Spaghetti Cacio e Pepe',
+    name: 'Lasagna',
     description: 'Roman pasta with pecorino cheese and black pepper',
     price: 12,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
