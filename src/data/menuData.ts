@@ -270,7 +270,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-spaghetti-8',
-    name: 'Spaghetti Arrabbiata',
+    name: 'Tegliatelle',
     description: 'Spicy tomato sauce with chili peppers and garlic',
     price: 11,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
