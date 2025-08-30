@@ -254,7 +254,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-spaghetti-7',
-    name: 'Spaghetti Vongole',
+    name: 'Ravioli',
     description: 'Fresh clams with white wine and garlic',
     price: 16,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
