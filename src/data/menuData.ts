@@ -76,7 +76,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-soup-3',
-    name: 'Mushroom Barley Soup',
+    name: 'Tomato Soup',
     description: 'Rich mushroom soup with pearl barley and fresh herbs',
     price: 9,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -84,7 +84,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'soup',
     calories: 250,
     volume: '380ml',
-    ingredients: ['mixed mushrooms', 'pearl barley', 'vegetable broth', 'thyme', 'bay leaves'],
+    ingredients: ['Carrot', 'Onion', 'Celery', 'Garlic', 'Cream', 'Leek', 'Salt', 'Oil'],
     available: true,
     quantity: 10,
     rating: 4.5,
