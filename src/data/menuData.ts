@@ -394,7 +394,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'traditional',
     calories: 480,
     volume: '300g',
-    ingredients: ['raw beef', 'mitmita spice', 'ayib cheese', 'injera', 'butter', 'cardamom'],
+    ingredients: ['Beef', 'Tomato', 'Onion', 'injera', 'butter', 'cardamom'],
     available: true,
     quantity: 5,
     rating: 4.9,
