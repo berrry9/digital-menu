@@ -246,7 +246,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'spaghetti',
     calories: 620,
     volume: '350g',
-    ingredients: ['Tomato', 'Onion', 'Zikuni', 'Cabbage', 'Garlic', 'Carrot', 'Salt', 'Cabbage', 'Garlic', 'nutmeg'],
+    ingredients: ['Tomato', 'Onion', 'Zikuni', 'Cabbage', 'Garlic', 'Carrot', 'Salt', 'Oil', 'Garlic', 'nutmeg'],
     available: true,
     quantity: 7,
     rating: 4.5,
