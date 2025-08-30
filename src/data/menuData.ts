@@ -206,7 +206,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-spaghetti-4',
-    name: 'Spaghetti Marinara',
+    name: 'Carbonara',
     description: 'Fresh tomato sauce with herbs and garlic',
     price: 11,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -214,7 +214,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'spaghetti',
     calories: 380,
     volume: '340g',
-    ingredients: ['spaghetti', 'fresh tomatoes', 'basil', 'garlic', 'olive oil', 'oregano'],
+    ingredients: ['spaghetti', 'Cheese', 'Oil', 'Cream', 'Garlic', 'Be.Hum', 'Egg', 'Butter'],
     available: true,
     quantity: 14,
     rating: 4.4,
