@@ -52,7 +52,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'soup',
     calories: 320,
     volume: '350ml',
-    ingredients: ['red lentils', 'berbere spice', 'onions', 'garlic', 'ginger', 'tomatoes'],
+    ingredients: ['Beef', 'Carrort', 'Cabbage', 'Zikuni', 'French Beans', 'Garlic', 'Chili', 'Ginger', 'Salt', 'Oil'],
     available: true,
     quantity: 12,
     rating: 4.8,
