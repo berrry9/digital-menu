@@ -336,7 +336,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-rice-3',
-    name: 'Coconut Rice',
+    name: 'Mushroom Sauce',
     description: 'Fragrant rice cooked in coconut milk with spices',
     price: 10,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
