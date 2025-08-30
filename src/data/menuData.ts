@@ -450,7 +450,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-traditional-5',
-    name: 'Misir Wot',
+    name: '',
     description: 'Spicy red lentil stew with berbere',
     price: 12,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
