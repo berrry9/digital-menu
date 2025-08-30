@@ -44,15 +44,15 @@ export const menuItems: MenuItem[] = [
   // MAINS - Soup (7 items)
   {
     id: 'main-soup-1',
-    name: 'Hungarian Soup',
+    name: 'Ethiopian Lentil Soup',
     description: 'Traditional red lentil soup with berbere spices and aromatic herbs',
     price: 8,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
-    category: 'Mains',
+    category: 'noodles',
     subCategory: 'soup',
     calories: 320,
     volume: '350ml',
-    ingredients: ['Beef', 'Carrort', 'Cabbage', 'Zikuni', 'French Beans', 'Garlic', 'Chili', 'Ginger', 'Salt', 'Oil'],
+    ingredients: ['red lentils', 'berbere spice', 'onions', 'garlic', 'ginger', 'tomatoes'],
     available: true,
     quantity: 12,
     rating: 4.8,
@@ -60,7 +60,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-soup-2',
-    name: 'Chicken Vegetable Soup',
+    name: 'Chicken Vegetable Soupp',
     description: 'Hearty chicken soup with fresh vegetables and herbs',
     price: 10,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
