@@ -426,7 +426,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'traditional',
     calories: 380,
     volume: '350g',
-    ingredients: ['Shiro', 'Onion', 'onions', 'garlic', 'oil', 'injera'],
+    ingredients: ['Shiro', 'Onion', 'Shiro', 'garlic', 'oil', 'injera'],
     available: true,
     quantity: 12,
     rating: 4.5,
