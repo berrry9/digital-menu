@@ -190,7 +190,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-spaghetti-3',
-    name: 'Spaghetti Aglio e Olio',
+    name: 'Mushroom Sauce',
     description: 'Simple pasta with garlic, olive oil, and chili flakes',
     price: 10,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
