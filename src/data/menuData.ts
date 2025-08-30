@@ -352,7 +352,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-rice-4',
-    name: 'Lamb Biryani',
+    name: 'Carbonara',
     description: 'Aromatic rice dish with tender lamb and spices',
     price: 20,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -360,7 +360,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'rice',
     calories: 720,
     volume: '500g',
-    ingredients: ['basmati rice', 'lamb', 'yogurt', 'saffron', 'cardamom', 'cinnamon'],
+    ingredients: ['Rice', 'Cheese', 'Oil', 'Cream', 'Garlic', 'Be.Hum', 'Egg', 'Butter'],
     available: true,
     quantity: 4,
     rating: 4.8,
