@@ -418,7 +418,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-traditional-3',
-    name: 'Shiro',
+    name: 'Bozena Shiro',
     description: 'Traditional chickpea stew with spices',
     price: 14,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -426,7 +426,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'traditional',
     calories: 380,
     volume: '350g',
-    ingredients: ['ground chickpeas', 'berbere', 'onions', 'garlic', 'oil', 'injera'],
+    ingredients: ['Shiro', 'berbere', 'onions', 'garlic', 'oil', 'injera'],
     available: true,
     quantity: 12,
     rating: 4.5,
