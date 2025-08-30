@@ -158,7 +158,7 @@ export const menuItems: MenuItem[] = [
   // MAINS - Spaghetti (9 items)
   {
     id: 'main-spaghetti-1',
-    name: 'Spaghetti Carbonara',
+    name: 'Bolognese Sauce',
     description: 'Classic Italian pasta with eggs, cheese, and pancetta',
     price: 14,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
