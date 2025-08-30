@@ -304,7 +304,7 @@ export const menuItems: MenuItem[] = [
   // MAINS - Rice (5 items)
   {
     id: 'main-rice-1',
-    name: 'Ethiopian Injera with Doro Wat',
+    name: 'Bolognese Sauce',
     description: 'Traditional spongy bread with spicy chicken stew',
     price: 18,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -312,7 +312,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'rice',
     calories: 650,
     volume: '450g',
-    ingredients: ['injera bread', 'chicken', 'berbere spice', 'onions', 'eggs', 'butter'],
+    ingredients: ['Rice', 'Tomato', 'berbere spice', 'onions', 'eggs', 'butter'],
     available: true,
     quantity: 6,
     rating: 4.9,
