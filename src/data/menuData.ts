@@ -148,7 +148,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'soup',
     calories: 290,
     volume: '380ml',
-    ingredients: ['mixed vegetables', 'white beans', 'pasta', 'tomatoes', 'herbs', 'vegetable broth'],
+    ingredients: ['Carrot', 'F.beans', 'Leek', 'Onion', 'Zikuni', 'Celery', 'Potato', 'S,Papper', 'Salt', 'Oil'],
     available: true,
     quantity: 11,
     rating: 4.3,
