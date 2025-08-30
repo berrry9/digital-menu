@@ -60,7 +60,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-soup-2',
-    name: 'Chicken Vegetable Soupp',
+    name: 'Carrot Soup',
     description: 'Hearty chicken soup with fresh vegetables and herbs',
     price: 10,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -68,7 +68,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'soup',
     calories: 280,
     volume: '400ml',
-    ingredients: ['chicken breast', 'carrots', 'celery', 'onions', 'herbs', 'chicken broth'],
+    ingredients: ['Carrot', 'Onion', 'celery', 'Leek', 'G.Beans', 'Salt', 'Oil'],
     available: true,
     quantity: 8,
     rating: 4.6,
