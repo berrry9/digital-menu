@@ -48,7 +48,7 @@ export const menuItems: MenuItem[] = [
     description: 'Beef, Carrort, Cabbage, Zikuni, French Beans, Garlic, Chili, Ginger, Salt, Oil',
     price: 8,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
-    category: 'noodles',
+    category: 'Soup',
     subCategory: 'soup',
     calories: 320,
     volume: '350ml',
