@@ -442,7 +442,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'traditional',
     calories: 180,
     volume: '300g',
-    ingredients: ['collard greens', 'garlic', 'ginger', 'onions', 'oil', 'spices'],
+    ingredients: ['Beef', 'Tomato', 'Onion', 'G.Papper', 'oil', 'spices'],
     available: true,
     quantity: 15,
     rating: 4.3,
