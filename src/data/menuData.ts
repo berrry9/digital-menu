@@ -410,7 +410,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'traditional',
     calories: 550,
     volume: '400g',
-    ingredients: ['beef cubes', 'onions', 'peppers', 'rosemary', 'berbere', 'injera'],
+    ingredients: ['Beef', 'onions', 'peppers', 'rosemary', 'berbere', 'injera'],
     available: true,
     quantity: 8,
     rating: 4.7,
