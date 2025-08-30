@@ -328,7 +328,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'rice',
     calories: 420,
     volume: '380g',
-    ingredients: ['basmati rice', 'mixed vegetables', 'cumin', 'cardamom', 'saffron', 'almonds'],
+    ingredients: ['Rice', 'Tomato', 'cumin', 'cardamom', 'saffron', 'almonds'],
     available: true,
     quantity: 10,
     rating: 4.5,
