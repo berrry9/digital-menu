@@ -140,7 +140,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'main-soup-7',
-    name: 'Vegetable Minestrone',
+    name: 'Vegetable Soup',
     description: 'Italian vegetable soup with beans and pasta',
     price: 8,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
