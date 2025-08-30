@@ -394,7 +394,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'traditional',
     calories: 480,
     volume: '300g',
-    ingredients: ['Beef', 'Tomato', 'Onion', 'Chill', 'Injera', 'cardamom'],
+    ingredients: ['Beef', 'Tomato', 'Onion', 'Chill', 'Injera', 'Chill', 'Injera', 'cardamom'],
     available: true,
     quantity: 5,
     rating: 4.9,
