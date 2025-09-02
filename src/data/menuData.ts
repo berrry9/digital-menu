@@ -688,7 +688,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'fish',
     calories: 420,
     volume: '250g',
-    ingredients: ['salmon fillet', 'herbs', 'lemon', 'olive oil', 'garlic', 'black pepper'],
+    ingredients: ['Nile Perch', 'Onion', 'Chili', 'Rice', 'Vegitable', 'Mustared', 'Salt', 'Oil'],
     available: true,
     quantity: 6,
     rating: 4.8,
