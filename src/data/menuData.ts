@@ -680,7 +680,7 @@ export const menuItems: MenuItem[] = [
   // GRILL - Fish (3 items)
   {
     id: 'grill-fish-1',
-    name: 'Grilled Salmon',
+    name: 'Grilled Nile Perch',
     description: 'Fresh Atlantic salmon with herbs and lemon',
     price: 24,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
