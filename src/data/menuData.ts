@@ -646,7 +646,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-burger-2',
-    name: 'Chicken Burger',
+    name: 'Beef Burger',
     description: 'Grilled chicken breast with avocado and mayo',
     price: 14,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
