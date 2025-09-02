@@ -612,7 +612,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-pizza-9',
-    name: 'Seafood Pizza',
+    name: 'Fasing Vegitable Pizza',
     description: 'Pizza with mixed seafood and herbs',
     price: 26,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
