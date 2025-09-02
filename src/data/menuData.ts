@@ -712,7 +712,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-fish-3',
-    name: 'Fish and Chips',
+    name: 'Fish Goulash',
     description: 'Battered fish with crispy fries',
     price: 16,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
