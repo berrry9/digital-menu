@@ -696,7 +696,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-fish-2',
-    name: 'Grilled Tilapia',
+    name: 'Fried Fish Telapia',
     description: 'Seasoned tilapia with vegetables',
     price: 18,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
