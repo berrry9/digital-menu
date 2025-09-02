@@ -580,7 +580,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-pizza-7',
-    name: 'BBQ Chicken Pizza',
+    name: 'Tuna Pizza',
     description: 'Pizza with BBQ chicken and red onions',
     price: 20,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
