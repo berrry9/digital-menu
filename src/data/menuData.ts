@@ -654,7 +654,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'burger',
     calories: 580,
     volume: '280g',
-    ingredients: ['Beef', 'Onion', 'Tomato', 'Lettuce', 'Potato', 'Mayonnaise', 'G.Pepper', 'lettuce', 'mayo',  'lettuce', 'mayo', 'tomato'],
+    ingredients: ['Beef', 'Onion', 'Tomato', 'Lettuce', 'Potato', 'Mayonnaise', 'G.Pepper', 'Oil', 'Salt', 'Ketchup'],
     available: true,
     quantity: 10,
     rating: 4.5,
