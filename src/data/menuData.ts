@@ -548,7 +548,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-pizza-5',
-    name: 'Vegetarian Pizza',
+    name: 'Calazone Pizza',
     description: 'Pizza loaded with fresh vegetables',
     price: 17,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
