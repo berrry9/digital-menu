@@ -630,7 +630,7 @@ export const menuItems: MenuItem[] = [
   // GRILL - Burger (3 items)
   {
     id: 'grill-burger-1',
-    name: 'Classic Beef Burger',
+    name: 'Tewodros Special Burger',
     description: 'Juicy beef patty with lettuce, tomato, and cheese',
     price: 15,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
