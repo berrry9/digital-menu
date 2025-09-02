@@ -500,7 +500,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-pizza-2',
-    name: 'Pepperoni Pizza',
+    name: 'Special Pizza',
     description: 'Classic pizza with pepperoni and mozzarella',
     price: 18,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
