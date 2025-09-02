@@ -662,7 +662,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-burger-3',
-    name: 'Veggie Burger',
+    name: 'Beef With Cheese Burger',
     description: 'Plant-based patty with fresh vegetables',
     price: 13,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
