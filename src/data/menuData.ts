@@ -588,7 +588,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'pizza',
     calories: 680,
     volume: '12 inch',
-    ingredients: ['pizza dough', 'BBQ sauce', 'mozzarella', 'grilled chicken', 'red onions', 'cilantro'],
+    ingredients: ['pizza dough', 'BBQ sauce', 'mozzarella', 'grilled chicken', 'red onions', 'BBQ sauce', 'mozzarella', 'grilled chicken', 'red onions', 'BBQ sauce', 'mozzarella', 'grilled chicken', 'cilantro'],
     available: true,
     quantity: 8,
     rating: 4.6,
