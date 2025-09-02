@@ -704,7 +704,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'fish',
     calories: 320,
     volume: '220g',
-    ingredients: ['Telapia Fish', 'Mustared', 'Flour', 'W.Pepper', 'Garlic', 'Rice', 'spices', 'lemon', 'herbs'],
+    ingredients: ['Telapia Fish', 'Mustared', 'Flour', 'W.Pepper', 'Garlic', 'Rice', 'Vegitable', 'Oil', 'Salt'],
     available: true,
     quantity: 8,
     rating: 4.5,
