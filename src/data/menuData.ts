@@ -532,7 +532,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-pizza-4',
-    name: 'Quattro Stagioni',
+    name: 'Meshroom Pizza',
     description: 'Four seasons pizza with varied toppings',
     price: 22,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
