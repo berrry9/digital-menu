@@ -620,7 +620,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'pizza',
     calories: 640,
     volume: '12 inch',
-    ingredients: ['Wheat flour', 'Tomato', 'Zikuni', 'calamari', 'white sauce', 'shrimp', 'calamari', 'white sauce', 'mozzarella', 'shrimp', 'calamari', 'herbs'],
+    ingredients: ['Wheat flour', 'Tomato', 'Zikuni', 'Carrot', 'white sauce', 'shrimp', 'calamari', 'white sauce', 'mozzarella', 'shrimp', 'calamari', 'herbs'],
     available: true,
     quantity: 4,
     rating: 4.7,
