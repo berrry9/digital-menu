@@ -516,7 +516,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-pizza-3',
-    name: 'Hawaiian Pizza',
+    name: 'Chicken Pizza',
     description: 'Pizza with ham, pineapple, and mozzarella',
     price: 19,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
