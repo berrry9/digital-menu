@@ -564,7 +564,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-pizza-6',
-    name: 'Meat Lovers Pizza',
+    name: 'Orental Pizza',
     description: 'Pizza with multiple meat toppings',
     price: 24,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
