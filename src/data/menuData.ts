@@ -1628,7 +1628,7 @@ export const menuItems: MenuItem[] = [
   // ALCOHOL - Beer (8 items)
   {
     id: 'alcohol-beer-1',
-    name: 'Heineken',
+    name: 'St/ Georger Beer',
     description: 'Premium Dutch lager beer',
     price: 6,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
