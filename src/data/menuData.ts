@@ -1000,7 +1000,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'salad',
     calories: 380,
     volume: '300g',
-    ingredients: ['quinoa', 'mixed vegetables', 'herbs', 'lemon dressing', 'nuts'],
+    ingredients: ['', '', '', '', ''],
     available: true,
     quantity: 12,
     rating: 4.4,
