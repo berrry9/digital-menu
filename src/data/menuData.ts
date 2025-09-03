@@ -1660,7 +1660,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'alcohol-beer-3',
-    name: 'Corona Extra',
+    name: 'Castle',
     description: 'Mexican light beer with lime',
     price: 6,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
