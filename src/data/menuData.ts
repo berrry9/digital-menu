@@ -984,7 +984,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'salad',
     calories: 520,
     volume: '320g',
-    ingredients: ['Tuna', 'Lettuce', 'Onion', 'Tomato', 'G.Pepper', 'Cucumber', 'bacon', 'blue cheese', 'eggs', 'chicken', 'bacon', 'avocado'],
+    ingredients: ['Tuna', 'Lettuce', 'Onion', 'Tomato', 'G.Pepper', 'Cucumber', 'Veinger', 'blue cheese', 'eggs', 'chicken', 'bacon', 'avocado'],
     available: true,
     quantity: 10,
     rating: 4.7,
