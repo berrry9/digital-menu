@@ -1138,7 +1138,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-breakfast-9',
-    name: 'Bagel with Cream Cheese',
+    name: 'Chechebsa',
     description: 'Fresh bagel with cream cheese and lox',
     price: 10,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
