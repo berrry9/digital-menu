@@ -1316,7 +1316,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-11',
-    name: 'Herbal Tea',
+    name: 'Special Tea',
     description: 'Caffeine-free herbal blend',
     price: 3,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
