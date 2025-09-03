@@ -1018,7 +1018,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'breakfast',
     calories: 720,
     volume: '450g',
-    ingredients: ['eggs', 'bacon', 'sausage', 'baked beans', 'toast', 'mushrooms'],
+    ingredients: ['Eggs', 'Tomato', 'Onion', 'Pepper', 'Served with Toast bread'],
     available: true,
     quantity: 8,
     rating: 4.6,
