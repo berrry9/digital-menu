@@ -1676,7 +1676,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'alcohol-beer-4',
-    name: 'Guinness',
+    name: 'Harar Beer',
     description: 'Irish dry stout',
     price: 7,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
