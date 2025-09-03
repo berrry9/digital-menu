@@ -1268,7 +1268,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-8',
-    name: 'Chai Latte',
+    name: 'Macchiato',
     description: 'Spiced tea with steamed milk',
     price: 5,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
