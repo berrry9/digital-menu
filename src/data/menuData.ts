@@ -1074,7 +1074,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-breakfast-5',
-    name: 'Omelette',
+    name: 'French Toast',
     description: 'Three-egg omelette with cheese and herbs',
     price: 11,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
