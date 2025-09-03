@@ -894,7 +894,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-sandwich-4',
-    name: 'Reuben Sandwich',
+    name: 'Tuna Sandwich',
     description: 'Corned beef with sauerkraut and Russian dressing',
     price: 14,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -902,7 +902,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'sandwich',
     calories: 620,
     volume: '280g',
-    ingredients: ['rye bread', 'corned beef', 'sauerkraut', 'swiss cheese', 'russian dressing'],
+    ingredients: ['Wheat flour', 'Tuna', 'Onion', 'swiss cheese', 'russian dressing'],
     available: true,
     quantity: 12,
     rating: 4.6,
