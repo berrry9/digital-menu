@@ -746,7 +746,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-beef-2',
-    name: 'Beef Tenderloin',
+    name: 'Saute Fillet Steak',
     description: 'Tender beef fillet with mushroom sauce',
     price: 28,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
