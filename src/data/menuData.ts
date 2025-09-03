@@ -984,7 +984,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'salad',
     calories: 520,
     volume: '320g',
-    ingredients: ['mixed greens', 'chicken', 'bacon', 'blue cheese', 'eggs', 'avocado'],
+    ingredients: ['mixed greens', 'chicken', 'bacon', 'blue cheese', 'eggs', 'chicken', 'bacon', 'blue cheese', 'eggs', 'chicken', 'bacon', 'avocado'],
     available: true,
     quantity: 10,
     rating: 4.7,
