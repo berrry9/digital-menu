@@ -1300,7 +1300,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-10',
-    name: 'Earl Grey Tea',
+    name: 'Moringa Tea',
     description: 'Classic black tea with bergamot',
     price: 3,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
