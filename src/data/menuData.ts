@@ -1026,7 +1026,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-breakfast-2',
-    name: 'Pancakes',
+    name: 'Cheese Omlet',
     description: 'Fluffy pancakes with syrup and butter',
     price: 10,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
