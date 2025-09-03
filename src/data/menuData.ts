@@ -754,7 +754,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'beef',
     calories: 580,
     volume: '250g',
-    ingredients: ['beef tenderloin', 'mushrooms', 'cream', 'wine', 'herbs', 'cream', 'wine', 'herbs', 'butter'],
+    ingredients: ['Beef Fillet', 'Cream', 'Mushroom', 'Oil', 'Salt', 'B.Pepper', 'Vegitable', 'Wine'],
     available: true,
     quantity: 5,
     rating: 4.8,
