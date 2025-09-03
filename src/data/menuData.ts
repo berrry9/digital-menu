@@ -1708,7 +1708,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'alcohol-beer-6',
-    name: 'Local Ethiopian Beer',
+    name: 'Waliya Beer',
     description: 'Traditional Ethiopian beer',
     price: 4,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
