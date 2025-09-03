@@ -1090,7 +1090,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-breakfast-6',
-    name: 'Avocado Toast',
+    name: 'Pancake',
     description: 'Toasted bread with smashed avocado and toppings',
     price: 9,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
