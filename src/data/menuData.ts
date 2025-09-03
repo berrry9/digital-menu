@@ -960,7 +960,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-salad-2',
-    name: 'Greek Salad',
+    name: 'Chicken Salad',
     description: 'Mixed greens with feta, olives, and tomatoes',
     price: 12,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
