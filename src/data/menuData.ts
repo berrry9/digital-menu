@@ -730,7 +730,7 @@ export const menuItems: MenuItem[] = [
   // GRILL - Beef (3 items)
   {
     id: 'grill-beef-1',
-    name: 'Ribeye Steak',
+    name: 'Beef Kife',
     description: 'Premium ribeye steak grilled to perfection',
     price: 32,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
