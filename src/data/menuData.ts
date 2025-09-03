@@ -796,7 +796,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-chicken-2',
-    name: 'Chicken Parmesan',
+    name: 'Chicken Breast',
     description: 'Breaded chicken with marinara and cheese',
     price: 18,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -804,7 +804,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'chicken',
     calories: 620,
     volume: '300g',
-    ingredients: ['chicken breast', 'breadcrumbs', 'marinara sauce', 'mozzarella', 'parmesan'],
+    ingredients: ['Chicken Breast', 'breadcrumbs', 'marinara sauce', 'mozzarella', 'parmesan'],
     available: true,
     quantity: 8,
     rating: 4.7,
