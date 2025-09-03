@@ -1414,7 +1414,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-juice-2',
-    name: 'Mixed Berry Juice',
+    name: 'Water Juice',
     description: 'Blend of fresh berries',
     price: 7,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
