@@ -1364,7 +1364,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-14',
-    name: 'Flat White',
+    name: 'Ginger Tea',
     description: 'Double espresso with steamed milk',
     price: 5,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
