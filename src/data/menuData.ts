@@ -762,7 +762,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'grill-beef-3',
-    name: 'BBQ Beef Ribs',
+    name: 'Tewodros Gun Powder',
     description: 'Slow-cooked beef ribs with BBQ sauce',
     price: 26,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
