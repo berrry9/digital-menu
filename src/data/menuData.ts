@@ -1042,7 +1042,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-breakfast-3',
-    name: 'Eggs Benedict',
+    name: 'Scramble Egg',
     description: 'Poached eggs with hollandaise on English muffin',
     price: 14,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
