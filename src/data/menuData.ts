@@ -820,7 +820,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'chicken',
     calories: 580,
     volume: '350g',
-    ingredients: ['chicken Breast', 'Rice', 'Spaghetti', 'carrots'],
+    ingredients: ['chicken Breast', 'Rice', 'Spaghetti', 'Cooked Vegitable'],
     available: true,
     quantity: 12,
     rating: 4.5,
