@@ -770,7 +770,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'beef',
     calories: 780,
     volume: '400g',
-    ingredients: ['Beef Fillet', 'Cream', 'B.Pepper', 'Egg', 'garlic', 'onions'],
+    ingredients: ['Beef Fillet', 'Cream', 'B.Pepper', 'Egg', 'Oil', 'onions'],
     available: true,
     quantity: 6,
     rating: 4.7,
