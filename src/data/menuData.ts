@@ -862,7 +862,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-sandwich-2',
-    name: 'Grilled Cheese',
+    name: 'Chicken Sandwich',
     description: 'Classic grilled cheese with tomato soup',
     price: 8,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
