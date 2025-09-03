@@ -22,7 +22,7 @@ export const SubCategoryNav: React.FC<SubCategoryNavProps> = ({
       case 'salad':
         return ['hot-drinks', 'juice', 'soft-drinks', 'mineral-water'];
       case 'sushi':
-        return ['beer', 'wine', 'spirits', 'rum'];
+        return ['beer', 'wine', 'spirits-rum'];
       default:
         return [];
     }
@@ -44,7 +44,7 @@ export const SubCategoryNav: React.FC<SubCategoryNavProps> = ({
               : 'text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'
           }`}
         >
-          {subCategory.charAt(0).toUpperCase() + subCategory.slice(1).replace('-', ' ')}
+          {subCategory === 'spirits-rum' ? 'Spirits & Rum Drinks' : subCategory.charAt(0).toUpperCase() + subCategory.slice(1).replace('-', ' ')}
         </button>
       ))}
     </div>
