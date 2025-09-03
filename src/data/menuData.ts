@@ -1156,7 +1156,7 @@ export const menuItems: MenuItem[] = [
   // DRINKS - Hot Drinks (15 items)
   {
     id: 'drink-hot-1',
-    name: 'Ethiopian Coffee',
+    name: 'Milk',
     description: 'Traditional Ethiopian coffee ceremony brew',
     price: 4,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
