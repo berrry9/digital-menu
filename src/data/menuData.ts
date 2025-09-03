@@ -1284,7 +1284,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-9',
-    name: 'Green Tea',
+    name: 'Ment Tea',
     description: 'Premium green tea leaves',
     price: 3,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
