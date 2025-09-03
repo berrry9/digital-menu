@@ -1692,7 +1692,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'alcohol-beer-5',
-    name: 'Stella Artois',
+    name: 'Dashin Beer',
     description: 'Belgian premium lager',
     price: 6,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
