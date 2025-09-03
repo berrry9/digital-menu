@@ -1380,7 +1380,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-15',
-    name: 'Spiced Tea',
+    name: 'Lemon Tea',
     description: 'Traditional Ethiopian spiced tea',
     price: 4,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
