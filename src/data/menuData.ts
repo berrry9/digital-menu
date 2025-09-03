@@ -1348,7 +1348,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-13',
-    name: 'Espresso',
+    name: 'Coflate',
     description: 'Strong concentrated coffee shot',
     price: 3,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
