@@ -1430,7 +1430,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-juice-3',
-    name: 'Green Vegetable Juice',
+    name: 'Mixed Juice',
     description: 'Healthy blend of green vegetables',
     price: 8,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
