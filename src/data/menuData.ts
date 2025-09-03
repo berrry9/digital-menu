@@ -1220,7 +1220,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-5',
-    name: 'Macchiato',
+    name: 'Coffe With Milk',
     description: 'Espresso with a dollop of steamed milk',
     price: 4,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -1236,7 +1236,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-6',
-    name: 'Mocha',
+    name: 'Tea With Milk',
     description: 'Espresso with chocolate and steamed milk',
     price: 6,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -1252,7 +1252,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-7',
-    name: 'Hot Chocolate',
+    name: 'Fasting Macchiato',
     description: 'Rich hot chocolate with whipped cream',
     price: 5,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
