@@ -812,7 +812,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-chicken-3',
-    name: 'Chicken ',
+    name: 'Chicken Stir Fried',
     description: 'Spicy chicken wings with blue cheese dip',
     price: 14,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
