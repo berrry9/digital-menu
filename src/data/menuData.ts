@@ -1528,7 +1528,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-soft-6',
-    name: 'Tonic Water',
+    name: 'Novida',
     description: 'Classic tonic water with quinine',
     price: 3,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
