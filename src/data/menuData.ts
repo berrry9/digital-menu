@@ -1546,7 +1546,7 @@ export const menuItems: MenuItem[] = [
   // DRINKS - Mineral Water (5 items)
   {
     id: 'drink-water-1',
-    name: 'Evian Water',
+    name: 'Ambo Water',
     description: 'Premium natural spring water',
     price: 4,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -1562,7 +1562,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-water-2',
-    name: 'Perrier Sparkling',
+    name: 'Mini Water',
     description: 'Natural sparkling mineral water',
     price: 5,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -1578,7 +1578,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-water-3',
-    name: 'San Pellegrino',
+    name: 'Small Water',
     description: 'Italian sparkling natural mineral water',
     price: 5,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -1594,7 +1594,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-water-4',
-    name: 'Local Spring Water',
+    name: 'Medium Water',
     description: 'Fresh local spring water',
     price: 2,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
