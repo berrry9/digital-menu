@@ -1114,7 +1114,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'breakfast',
     calories: 620,
     volume: '350g',
-    ingredients: ['Oats', 'Milk', 'peppers', 'onions', 'salsa'],
+    ingredients: ['Oats', 'Milk', 'Hony'],
     available: true,
     quantity: 11,
     rating: 4.6,
