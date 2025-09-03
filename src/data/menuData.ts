@@ -992,7 +992,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-salad-4',
-    name: 'Quinoa Salad',
+    name: 'Roasted',
     description: 'Healthy quinoa with vegetables and herbs',
     price: 11,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
