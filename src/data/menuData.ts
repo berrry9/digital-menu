@@ -1122,7 +1122,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-breakfast-8',
-    name: 'Granola Bowl',
+    name: 'Egg with Meat',
     description: 'Homemade granola with yogurt and fresh fruits',
     price: 8,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
