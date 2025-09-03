@@ -1010,7 +1010,7 @@ export const menuItems: MenuItem[] = [
   // SPECIALS - Breakfast (9 items)
   {
     id: 'special-breakfast-1',
-    name: 'Full English Breakfast',
+    name: 'Plan Omlet',
     description: 'Eggs, bacon, sausage, beans, and toast',
     price: 15,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
