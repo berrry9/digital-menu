@@ -1724,7 +1724,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'alcohol-beer-7',
-    name: 'Carlsberg',
+    name: 'Nigus',
     description: 'Danish pilsner beer',
     price: 5,
     image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=600',
@@ -1740,7 +1740,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'alcohol-beer-8',
-    name: 'IPA Craft Beer',
+    name: 'Sofi Malt',
     description: 'India Pale Ale with hoppy flavor',
     price: 8,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
