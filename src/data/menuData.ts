@@ -910,7 +910,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-sandwich-5',
-    name: 'Vegitable ',
+    name: 'Vegitable Sandwich',
     description: 'Grilled chicken with caesar salad in a wrap',
     price: 11,
     image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=600',
