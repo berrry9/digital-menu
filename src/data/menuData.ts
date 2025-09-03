@@ -1754,6 +1754,54 @@ export const menuItems: MenuItem[] = [
     rating: 4.7,
     isFavorite: false
   },
+  {
+    id: 'beer-9',
+    name: 'Corona Extra',
+    description: 'Light, crisp Mexican beer with a refreshing lime finish',
+    price: 4.50,
+    image: 'https://images.pexels.com/photos/1552630/pexels-photo-1552630.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+    category: 'sushi',
+    subCategory: 'beer',
+    calories: 148,
+    volume: '355ml',
+    ingredients: ['Water', 'Barley Malt', 'Hops', 'Yeast'],
+    available: true,
+    quantity: 45,
+    rating: 4.2,
+    isFavorite: false
+  },
+  {
+    id: 'beer-10',
+    name: 'Guinness Draught',
+    description: 'Rich, creamy Irish stout with distinctive dark color and smooth finish',
+    price: 5.25,
+    image: 'https://images.pexels.com/photos/1552630/pexels-photo-1552630.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+    category: 'sushi',
+    subCategory: 'beer',
+    calories: 125,
+    volume: '440ml',
+    ingredients: ['Water', 'Barley', 'Roast Malt Extract', 'Hops', 'Yeast'],
+    available: true,
+    quantity: 30,
+    rating: 4.6,
+    isFavorite: false
+  },
+  {
+    id: 'beer-11',
+    name: 'Blue Moon Belgian White',
+    description: 'Smooth wheat beer with coriander and orange peel, served with orange slice',
+    price: 4.75,
+    image: 'https://images.pexels.com/photos/1552630/pexels-photo-1552630.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+    category: 'sushi',
+    subCategory: 'beer',
+    calories: 164,
+    volume: '355ml',
+    ingredients: ['Water', 'Wheat', 'Barley Malt', 'Hops', 'Coriander', 'Orange Peel', 'Yeast'],
+    available: true,
+    quantity: 38,
+    rating: 4.3,
+    isFavorite: false
+  },
 
   // ALCOHOL - Wine (4 items)
   {
