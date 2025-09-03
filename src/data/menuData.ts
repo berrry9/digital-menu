@@ -1066,7 +1066,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'breakfast',
     calories: 480,
     volume: '280g',
-    ingredients: ['bread', 'eggs', 'milk', 'cinnamon', 'vanilla', 'maple syrup'],
+    ingredients: ['Enjera', 'Tomato', 'milk', 'cinnamon', 'vanilla', 'maple syrup'],
     available: true,
     quantity: 12,
     rating: 4.4,
