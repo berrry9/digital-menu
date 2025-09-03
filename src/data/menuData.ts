@@ -780,7 +780,7 @@ export const menuItems: MenuItem[] = [
   // SPECIALS - Chicken (4 items)
   {
     id: 'special-chicken-1',
-    name: 'Grilled Chicken Breast',
+    name: 'Grilled Chicken',
     description: 'Herb-marinated chicken breast with vegetables',
     price: 16,
     image: 'https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=600',
