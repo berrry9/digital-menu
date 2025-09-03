@@ -1493,7 +1493,7 @@ export const menuItems: MenuItem[] = [
     quantity: 28,
     rating: 4.2,
     isFavorite: false
-  }
+  },
   // Spirits and Rum Drinks items (sushi category, spirits-rum subcategory)
   {
     id: 'spirits-rum-1',
