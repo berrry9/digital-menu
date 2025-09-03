@@ -1130,7 +1130,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'breakfast',
     calories: 380,
     volume: '250g',
-    ingredients: ['granola', 'yogurt', 'berries', 'honey', 'nuts', 'seeds'],
+    ingredients: ['Beef', 'Egg', 'Onion', 'honey', 'nuts', 'seeds'],
     available: true,
     quantity: 16,
     rating: 4.4,
