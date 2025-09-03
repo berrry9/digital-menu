@@ -738,7 +738,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'beef',
     calories: 650,
     volume: '300g',
-    ingredients: ['Beef Fillet', 'Rice', 'B.pepper', 'garlic', 'herbs', 'butter'],
+    ingredients: ['Beef Fillet', 'Rice', 'B.Pepper', 'garlic', 'herbs', 'butter'],
     available: true,
     quantity: 4,
     rating: 4.9,
