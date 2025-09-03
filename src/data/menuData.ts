@@ -836,7 +836,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'chicken',
     calories: 520,
     volume: '320g',
-    ingredients: ['chicken thigh', 'teriyaki sauce', 'rice', 'vegetables', 'sesame seeds'],
+    ingredients: ['chicken Leg 3 Pcs', 'Rice', 'Or Cooked Vegitable'],
     available: true,
     quantity: 9,
     rating: 4.4,
