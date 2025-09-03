@@ -878,7 +878,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-sandwich-3',
-    name: 'BLT Sandwich',
+    name: 'Steak Sandwich',
     description: 'Bacon, lettuce, and tomato on toasted bread',
     price: 10,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
