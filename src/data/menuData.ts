@@ -1188,7 +1188,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-3',
-    name: 'Latte',
+    name: 'Flavour Tea',
     description: 'Espresso with steamed milk and light foam',
     price: 5,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
