@@ -976,7 +976,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-salad-3',
-    name: 'Cobb Salad',
+    name: 'Tuna Salad',
     description: 'Mixed greens with chicken, bacon, and blue cheese',
     price: 14,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
