@@ -934,7 +934,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'sandwich',
     calories: 650,
     volume: '320g',
-    ingredients: ['hoagie roll', 'beef', 'peppers', 'onions', 'provolone cheese'],
+    ingredients: ['Oil', 'Salt', 'Potato', 'provolone cheese'],
     available: true,
     quantity: 10,
     rating: 4.7,
