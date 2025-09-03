@@ -1512,7 +1512,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-soft-5',
-    name: 'Ginger Ale',
+    name: 'Mirinda',
     description: 'Refreshing ginger flavored soda',
     price: 3,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
