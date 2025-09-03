@@ -918,7 +918,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'sandwich',
     calories: 480,
     volume: '260g',
-    ingredients: ['Wheat flour', 'Onion', 'G.Pepper', 'caesar dressing', 'parmesan'],
+    ingredients: ['Wheat flour', 'Onion', 'G.Pepper', 'Tomato', 'parmesan'],
     available: true,
     quantity: 14,
     rating: 4.4,
