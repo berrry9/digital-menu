@@ -720,7 +720,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'fish',
     calories: 720,
     volume: '400g',
-    ingredients: ['Fish', 'Tomato', 'Onion', 'Garlic', 'Soya Souce', 'Rice', 'Onion', 'Garlic', 'malt vinegar', 'tartar sauce'],
+    ingredients: ['Fish', 'Tomato', 'Onion', 'Garlic', 'Soya Souce', 'Rice', 'Oil', 'Salt', 'Mustared'],
     available: true,
     quantity: 10,
     rating: 4.4,
