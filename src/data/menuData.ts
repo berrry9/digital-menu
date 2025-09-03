@@ -1058,7 +1058,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-breakfast-4',
-    name: 'French Toast',
+    name: 'Fasting Firfir',
     description: 'Golden French toast with cinnamon and syrup',
     price: 12,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
