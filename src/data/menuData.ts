@@ -828,7 +828,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-chicken-4',
-    name: 'Chicken Teriyaki',
+    name: 'Chicken Leg',
     description: 'Glazed chicken with teriyaki sauce and rice',
     price: 15,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
