@@ -952,7 +952,7 @@ export const menuItems: MenuItem[] = [
     subCategory: 'salad',
     calories: 320,
     volume: '250g',
-    ingredients: ['Lettuce', 'caesar dressing', 'croutons', 'parmesan', 'anchovies'],
+    ingredients: ['Lettuce', 'Tomato', 'croutons', 'parmesan', 'anchovies'],
     available: true,
     quantity: 16,
     rating: 4.5,
