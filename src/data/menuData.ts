@@ -1106,7 +1106,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'special-breakfast-7',
-    name: 'Breakfast Burrito',
+    name: 'Oats Porridge',
     description: 'Scrambled eggs with cheese and vegetables in tortilla',
     price: 13,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
