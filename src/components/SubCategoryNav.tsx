@@ -22,7 +22,7 @@ export const SubCategoryNav: React.FC<SubCategoryNavProps> = ({
       case 'salad':
         return ['hot-drinks', 'juice', 'soft-drinks', 'mineral-water'];
       case 'sushi':
-        return ['beer', 'wine', 'spirits', 'rum'];
+        return ['beer', 'wine', 'spirits-rum'];
       default:
         return [];
     }
