@@ -1644,7 +1644,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'alcohol-beer-2',
-    name: 'Budweiser',
+    name: 'Habesha Beer',
     description: 'Classic American lager',
     price: 5,
     image: 'https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=600',
