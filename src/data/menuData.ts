@@ -1398,7 +1398,7 @@ export const menuItems: MenuItem[] = [
   // DRINKS - Juice (3 items)
   {
     id: 'drink-juice-1',
-    name: 'Fresh Orange Juice',
+    name: 'Papaye Juice',
     description: 'Freshly squeezed orange juice',
     price: 6,
     image: 'https://images.pexels.com/photos/1640778/pexels-photo-1640778.jpeg?auto=compress&cs=tinysrgb&w=600',
