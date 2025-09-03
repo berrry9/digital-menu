@@ -1332,7 +1332,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-12',
-    name: 'Turkish Coffee',
+    name: 'Sprice',
     description: 'Strong traditional Turkish coffee',
     price: 4,
     image: 'https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=600',
