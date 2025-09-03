@@ -1204,7 +1204,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 'drink-hot-4',
-    name: 'Americano',
+    name: 'Coffe',
     description: 'Espresso with hot water',
     price: 3,
     image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600',
