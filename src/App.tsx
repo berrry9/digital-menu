@@ -10,6 +10,7 @@ import { Cart } from './components/Cart';
 import { SideCart } from './components/SideCart';
 import { PageTransition } from './components/PageTransition';
 import { OnboardingOverlay } from './components/onboarding/OnboardingOverlay';
+import { HotelDirectory } from './components/HotelDirectory';
 import { usePageTransition } from './hooks/usePageTransition';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { OnboardingProvider } from './contexts/OnboardingContext';
@@ -27,6 +28,7 @@ function AppContent() {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSideCartOpen, setIsSideCartOpen] = useState(false);
+  const [isHotelDirectoryOpen, setIsHotelDirectoryOpen] = useState(false);
   const [items, setItems] = useState(menuItems);
   
   const { isTransitioning, startTransition, completeTransition } = usePageTransition();
@@ -129,7 +131,37 @@ function AppContent() {
     }, 350);
   };
 
+  const handleOpenHotelDirectory = () => {
+    startTransition();
+    setTimeout(() => {
+      setIsHotelDirectoryOpen(true);
+    }, 350);
+  };
+
+  const handleCloseHotelDirectory = () => {
+    startTransition();
+    setTimeout(() => {
+      setIsHotelDirectoryOpen(false);
+    }, 350);
+  };
+
   const cartItemsCount = cartItems.reduce((sum, item) => sum + item.cartQuantity, 0);
+
+  if (isHotelDirectoryOpen) {
+    return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
+      >
+        <HotelDirectory onClose={handleCloseHotelDirectory} />
+        <PageTransition
+          isTransitioning={isTransitioning}
+          onTransitionComplete={completeTransition}
+        />
+      </motion.div>
+    );
+  }
 
   if (activeSubCategory) {
     return (
@@ -187,6 +219,7 @@ function AppContent() {
         user={user}
         cartItemsCount={cartItemsCount}
         onCartClick={() => setIsCartOpen(true)}
+        onInfoClick={handleOpenHotelDirectory}
       />
       
       <CategoryNav

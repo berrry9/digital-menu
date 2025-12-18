@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { User as UserIcon, ShoppingCart } from 'lucide-react';
+import { Info, ShoppingCart } from 'lucide-react';
 import { User } from '../types/menu';
 import { ThemeToggle } from './ThemeToggle';
 
@@ -8,9 +8,10 @@ interface HeaderProps {
   user: User;
   cartItemsCount: number;
   onCartClick: () => void;
+  onInfoClick: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ user, cartItemsCount, onCartClick }) => {
+export const Header: React.FC<HeaderProps> = ({ user, cartItemsCount, onCartClick, onInfoClick }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: -20 }}
@@ -55,13 +56,14 @@ export const Header: React.FC<HeaderProps> = ({ user, cartItemsCount, onCartClic
       
       <div className="flex items-center space-x-3">
         <ThemeToggle />
-        <motion.div
+        <motion.button
+          onClick={onInfoClick}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center transition-colors duration-300"
         >
-          <UserIcon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-        </motion.div>
+          <Info className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+        </motion.button>
         <motion.button
           onClick={onCartClick}
           whileHover={{ scale: 1.05 }}
