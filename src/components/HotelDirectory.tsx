@@ -4,9 +4,10 @@ import { ArrowLeft, Book, Phone, Utensils, Sparkles, Bed, MapPin, Building, Cloc
 
 interface HotelDirectoryProps {
   onClose: () => void;
+  onAdminClick: () => void;
 }
 
-export const HotelDirectory: React.FC<HotelDirectoryProps> = ({ onClose }) => {
+export const HotelDirectory: React.FC<HotelDirectoryProps> = ({ onClose, onAdminClick }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -202,6 +203,27 @@ export const HotelDirectory: React.FC<HotelDirectoryProps> = ({ onClose }) => {
               <Ambulance className="w-4 h-4 text-red-500 dark:text-red-400" />
               <p><span className="font-semibold text-gray-800 dark:text-white">Hospital:</span> St. Paul's Hospital (4 km), Black Lion Hospital (5 km)</p>
             </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+          className="bg-white dark:bg-gray-800 rounded-xl p-5 shadow-sm"
+        >
+          <div className="flex flex-col items-center space-y-3">
+            <motion.button
+              onClick={onAdminClick}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-md"
+            >
+              Admin Login
+            </motion.button>
+            <p className="text-xs text-gray-500 dark:text-gray-500 text-center">
+              Hotel staff and management only
+            </p>
           </div>
         </motion.div>
       </div>
