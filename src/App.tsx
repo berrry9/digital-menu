@@ -19,6 +19,7 @@ import { OnboardingProvider } from './contexts/OnboardingContext';
 import { AdminProvider, useAdmin } from './contexts/AdminContext';
 import { MenuItem, MenuCategory } from './types/menu';
 import { supabase } from './lib/supabase';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 interface CartItem extends MenuItem {
   cartQuantity: number;
@@ -37,6 +38,7 @@ function AppContent() {
   const [categories, setCategories] = useState<MenuCategory[]>([]);
   const [items, setItems] = useState<MenuItem[]>([]);
   const [isLoadingData, setIsLoadingData] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   const { isTransitioning, startTransition, completeTransition } = usePageTransition();
   const { isAuthenticated } = useAdmin();
@@ -48,52 +50,82 @@ function AppContent() {
   };
 
   useEffect(() => {
-    loadCategories();
-    loadMenuItems();
+    const loadData = async () => {
+      try {
+        const timeoutPromise = new Promise((_, reject) =>
+          setTimeout(() => reject(new Error('Loading timeout')), 10000)
+        );
+
+        await Promise.race([
+          Promise.all([loadCategories(), loadMenuItems()]),
+          timeoutPromise
+        ]);
+      } catch (error) {
+        console.error('Error loading data:', error);
+        setLoadError(error instanceof Error ? error.message : 'Failed to load data');
+        setIsLoadingData(false);
+      }
+    };
+
+    loadData();
   }, []);
 
   const loadCategories = async () => {
-    const { data, error } = await supabase
-      .from('categories')
-      .select('*')
-      .order('display_order');
+    try {
+      const { data, error } = await supabase
+        .from('categories')
+        .select('*')
+        .order('display_order');
 
-    if (!error && data) {
-      setCategories(data.map(cat => ({
-        id: cat.id,
-        name: cat.name,
-        icon: cat.icon
-      })));
+      if (error) throw error;
 
-      if (data.length > 0 && !activeCategory) {
-        setActiveCategory(data[0].id);
+      if (data) {
+        setCategories(data.map(cat => ({
+          id: cat.id,
+          name: cat.name,
+          icon: cat.icon
+        })));
+
+        if (data.length > 0 && !activeCategory) {
+          setActiveCategory(data[0].id);
+        }
       }
+      setIsLoadingData(false);
+    } catch (error) {
+      console.error('Error loading categories:', error);
+      throw error;
     }
-    setIsLoadingData(false);
   };
 
   const loadMenuItems = async () => {
-    const { data, error } = await supabase
-      .from('menu_items')
-      .select('*');
+    try {
+      const { data, error } = await supabase
+        .from('menu_items')
+        .select('*');
 
-    if (!error && data) {
-      setItems(data.map(item => ({
-        id: item.id,
-        name: item.name,
-        description: item.description,
-        price: item.price,
-        image: item.image,
-        category: item.category_id,
-        subCategory: item.sub_category || undefined,
-        calories: item.calories,
-        volume: item.volume || '',
-        ingredients: item.ingredients || [],
-        available: item.available,
-        quantity: item.quantity,
-        rating: item.rating,
-        isFavorite: false
-      })));
+      if (error) throw error;
+
+      if (data) {
+        setItems(data.map(item => ({
+          id: item.id,
+          name: item.name,
+          description: item.description,
+          price: item.price,
+          image: item.image,
+          category: item.category_id,
+          subCategory: item.sub_category || undefined,
+          calories: item.calories,
+          volume: item.volume || '',
+          ingredients: item.ingredients || [],
+          available: item.available,
+          quantity: item.quantity,
+          rating: item.rating,
+          isFavorite: false
+        })));
+      }
+    } catch (error) {
+      console.error('Error loading menu items:', error);
+      throw error;
     }
   };
 
@@ -328,6 +360,30 @@ function AppContent() {
     );
   }
 
+  if (loadError) {
+    return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-4"
+      >
+        <div className="text-center max-w-md">
+          <div className="w-16 h-16 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span className="text-3xl">⚠️</span>
+          </div>
+          <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">Unable to Load Menu</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">{loadError}</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+          >
+            Reload Application
+          </button>
+        </div>
+      </motion.div>
+    );
+  }
+
   if (isLoadingData) {
     return (
       <motion.div
@@ -418,13 +474,15 @@ function AppContent() {
 
 function App() {
   return (
-    <ThemeProvider>
-      <OnboardingProvider>
-        <AdminProvider>
-          <AppContent />
-        </AdminProvider>
-      </OnboardingProvider>
-    </ThemeProvider>
+    <ErrorBoundary>
+      <ThemeProvider>
+        <OnboardingProvider>
+          <AdminProvider>
+            <AppContent />
+          </AdminProvider>
+        </OnboardingProvider>
+      </ThemeProvider>
+    </ErrorBoundary>
   );
 }
 
