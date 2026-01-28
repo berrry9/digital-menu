@@ -72,14 +72,23 @@ function AppContent() {
 
   const loadCategories = async () => {
     try {
+      console.log('Loading categories from Supabase...');
       const { data, error } = await supabase
         .from('categories')
         .select('*')
         .order('display_order');
 
-      if (error) throw error;
+      if (error) {
+        console.error('Categories query error:', {
+          code: error.code,
+          message: error.message,
+          details: error
+        });
+        throw error;
+      }
 
       if (data) {
+        console.log(`Successfully loaded ${data.length} categories`);
         setCategories(data.map(cat => ({
           id: cat.id,
           name: cat.name,
@@ -99,13 +108,22 @@ function AppContent() {
 
   const loadMenuItems = async () => {
     try {
+      console.log('Loading menu items from Supabase...');
       const { data, error } = await supabase
         .from('menu_items')
         .select('*');
 
-      if (error) throw error;
+      if (error) {
+        console.error('Menu items query error:', {
+          code: error.code,
+          message: error.message,
+          details: error
+        });
+        throw error;
+      }
 
       if (data) {
+        console.log(`Successfully loaded ${data.length} menu items`);
         setItems(data.map(item => ({
           id: item.id,
           name: item.name,
