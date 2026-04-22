@@ -11,12 +11,11 @@ import { SideCart } from './components/SideCart';
 import { PageTransition } from './components/PageTransition';
 import { OnboardingOverlay } from './components/onboarding/OnboardingOverlay';
 import { HotelDirectory } from './components/HotelDirectory';
-import { AdminLogin } from './components/admin/AdminLogin';
 import { AdminDashboard } from './components/admin/AdminDashboard';
 import { usePageTransition } from './hooks/usePageTransition';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { OnboardingProvider } from './contexts/OnboardingContext';
-import { AdminProvider, useAdmin } from './contexts/AdminContext';
+import { AdminProvider } from './contexts/AdminContext';
 import { MenuItem, MenuCategory } from './types/menu';
 import { supabase } from './lib/supabase';
 
@@ -32,14 +31,12 @@ function AppContent() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSideCartOpen, setIsSideCartOpen] = useState(false);
   const [isHotelDirectoryOpen, setIsHotelDirectoryOpen] = useState(false);
-  const [isAdminLoginOpen, setIsAdminLoginOpen] = useState(false);
   const [isAdminDashboardOpen, setIsAdminDashboardOpen] = useState(false);
   const [categories, setCategories] = useState<MenuCategory[]>([]);
   const [items, setItems] = useState<MenuItem[]>([]);
   const [isLoadingData, setIsLoadingData] = useState(true);
 
   const { isTransitioning, startTransition, completeTransition } = usePageTransition();
-  const { isAuthenticated } = useAdmin();
 
   const user = {
     name: 'Guest',
@@ -206,22 +203,9 @@ function AppContent() {
   const handleOpenAdminLogin = () => {
     startTransition();
     setTimeout(() => {
-      setIsAdminLoginOpen(true);
+      setIsAdminDashboardOpen(true);
       setIsHotelDirectoryOpen(false);
     }, 350);
-  };
-
-  const handleCloseAdminLogin = () => {
-    startTransition();
-    setTimeout(() => {
-      setIsAdminLoginOpen(false);
-      setIsHotelDirectoryOpen(true);
-    }, 350);
-  };
-
-  const handleLoginSuccess = () => {
-    setIsAdminLoginOpen(false);
-    setIsAdminDashboardOpen(true);
   };
 
   const handleCloseAdminDashboard = () => {
@@ -232,7 +216,7 @@ function AppContent() {
 
   const cartItemsCount = cartItems.reduce((sum, item) => sum + item.cartQuantity, 0);
 
-  if (isAdminDashboardOpen && isAuthenticated) {
+  if (isAdminDashboardOpen) {
     return (
       <motion.div
         initial={{ opacity: 0 }}
@@ -245,21 +229,6 @@ function AppContent() {
           onTransitionComplete={completeTransition}
         />
       </motion.div>
-    );
-  }
-
-  if (isAdminLoginOpen) {
-    return (
-      <>
-        <AdminLogin
-          onClose={handleCloseAdminLogin}
-          onLoginSuccess={handleLoginSuccess}
-        />
-        <PageTransition
-          isTransitioning={isTransitioning}
-          onTransitionComplete={completeTransition}
-        />
-      </>
     );
   }
 
