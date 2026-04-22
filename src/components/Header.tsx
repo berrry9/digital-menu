@@ -29,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({ user, cartItemsCount, onCartClic
           className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center shadow-lg"
         >
           <img 
-            src="https://www.tewodros-belay-int-hotel.com/wp-content/uploads/2021/02/provincial-hotel.svg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+            src="https://opalstonehotel.com/111.jfif"
             alt="Tewodros Belay Int Hotel Logo"
             className="w-10 h-10 rounded-md object-cover"
             onError={(e) => {
@@ -51,7 +51,7 @@ export const Header: React.FC<HeaderProps> = ({ user, cartItemsCount, onCartClic
         transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
         className="text-xl font-bold text-gray-800 dark:text-white"
       >
-        Tewodros Belay Int Hotel Menu
+        MenuBet Digtal Menu
       </motion.div>
       
       <div className="flex items-center space-x-3">
